@@ -119,26 +119,30 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ---
 
 ## 📁 Project Structure
+
+```bash
 ai-writing-assistant/
 ├── app/
 │   ├── api/
 │   │   └── generate/
-│   │       └── route.ts        # API route — dynamic prompt + Groq LLM
-│   ├── globals.css              # Global styles
-│   ├── layout.tsx               # Root layout
-│   └── page.tsx                 # Main UI — controls + output
-├── public/                      # Static assets
-├── .env.local                   # Environment variables (not committed)
+│   │       └── route.ts          # API route — dynamic prompt + Groq LLM
+│   ├── globals.css               # Global styles
+│   ├── layout.tsx                # Root layout
+│   └── page.tsx                  # Main UI — controls + output
+├── public/                       # Static assets
+├── .env.local                    # Environment variables (not committed)
 ├── .gitignore
 ├── next.config.ts
 ├── package.json
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── README.md
-
+```
 ---
 
-## 🔄 How It Works
+### 🔄 How It Works
+
+```bash
 User selects content type, tone, length + describes topic
 ↓
 Frontend sends all options to /api/generate
@@ -150,6 +154,7 @@ Groq LLM generates tailored content
 Content rendered as formatted markdown
 ↓
 User copies, regenerates, or browses history
+```
 
 ---
 
